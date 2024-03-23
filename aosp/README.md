@@ -16,3 +16,8 @@ $ docker run -it --rm -v $(pwd):/src android-build-trusty
 > lunch aosp_arm-eng
 > m -j50
 ```
+
+在MacOs上使用
+确保Docker已开启`Use Rosetta for x86_64/amd64 emulation on Apple Silicon`选项
+`docker build`命令增加`--platform linux/amd64`选项
+`docker run`命令增加`--platform linux/amd64`选项
